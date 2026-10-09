@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "MonkeyToken",
+    "name": "Irreversible Monkey Dinasty",
+    "symbol": "MONKEY",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "67676767000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8400,
+    "initialMarketCapWei": "2710000000000000000000",
+    "remainderTo": "0x70bcbde387539d95ffe6d43edbf7c6aa2da87a09"
+  },
+  "notes": "MonkeyToken (src/MonkeyToken.sol) is a fixed-supply ERC-20 named Irreversible Monkey Dinasty with symbol MONKEY and 18 decimals, built on OpenZeppelin 5.4.0 ERC20, ERC20Burnable and ERC20Permit. Its constructor takes no arguments and mints the whole supply of 67,676,767 MONKEY (67676767000000000000000000 minor units) once to msg.sender, which on launch is the ProjectFactory. There is no mint function, no owner, no admin role, no pause, no blocklist, no fee or burn on transfer and no upgrade path, so every transfer delivers exactly the amount sent and the supply can only shrink through a holder's own burn or an allowance-gated burnFrom. The token needs no $factory, $poolManager or $launchNumber exemptions because it taxes nothing. No application contracts are deployed with it. The pool pairs with IMD at the fee and tick spacing above; initialPrice is provenance only and the deployer derives the opening price from economics.initialMarketCapWei and totalSupply."
+}
